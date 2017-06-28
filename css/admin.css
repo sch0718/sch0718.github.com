@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.navbar-brand.logo {
+	background-image: url('../images/favicon.png');
+	background-repeat: no-repeat;
+	background-position: right 10px;
+	background-size: 15px;
+	margin: 0px 10px;
+}
+
+#contentArea {
+	padding-bottom: 70px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #f2f2f2;
+	background-image: url('../images/logo.png');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 25px;
+	z-index: 99;
+}
+
+footer * {
+	display: none;
+}
+
+.lnbLayer {
+	text-align: left;
+	margin-top: 10px;
+}
+
+body.login {
+}
+
+.login #loginArea {
+	text-align: center;
+	padding: 200px;
+	color: #aaa;
+}
+
+.login #loginArea>section {
+	display: inline-block;
+	width: 260px;
+	padding-top: 60px;
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 50%;
+}
+
+.login #loginArea .has-feedback .form-control {
+	padding-left: 42.5px;
+	padding-right: 16px;
+}
+
+.login #loginArea .form-control-feedback {
+	left: 0px;
+}

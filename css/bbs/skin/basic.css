@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+#content-area {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#button-area {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#comment-area {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.progress {
+	margin-left: 20px;
+	height: 32px;
+}
+
+.progress .progress-bar {
+	padding: 7px 0px;
+}
+
+#comment-list .list-group-item-text .comment-text {
+	word-break: break-all;
+	white-space: pre-line;
+	max-height: 100px;
+	overflow-y: auto;
+}

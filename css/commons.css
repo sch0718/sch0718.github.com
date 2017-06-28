@@ -1,0 +1,313 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("icons.css");
+
+/* [[ START ]] Pagination */
+.page-header .breadcrumb {
+	margin: 20px 0px 0px 0px;
+	background-color: transparent;
+}
+
+.breadcrumb>.home>a>span {
+	padding-right: 5px;
+}
+/* [[  END  ]] Pagination */
+
+/* [[ START ]] Custom Components */
+/* Checkbox */
+label.checkbox {
+	padding: 0px !important;
+	margin-top: 0px;
+}
+
+label.checkbox.active, label.checkbox.focus, label.checkbox.active.focus {
+	background-color: inherit;
+	outline: none;
+}
+
+/* Combobox */
+.combobox {
+	border-color: #337ab7;
+	background-color: #fff;
+}
+
+/* Tree */
+.tree>ul {
+	padding-left: 0px !important;
+	margin-right: 20px;
+}
+
+.tree ul {
+	padding-left: 20px;
+	list-style: none;
+}
+
+.tree li a.node {
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	margin-right: -44px;
+	padding: 2px 5px;
+}
+
+.tree li a.node:hover {
+	color: #fff;
+	background-color: #66a3d5;
+	border-color: #207d74;
+}
+
+.tree li a.node.on {
+	color: #fff;
+	background-color: #286090;
+	border-color: #207d74;
+}
+
+.tree .glyphicon-none:before {
+	content: "\20";
+	padding: 0px 7px;
+}
+
+.tree li a.icon {
+	
+}
+
+.tree .node-close>ul {
+	display: none;
+}
+
+/* Modal */
+.modal-dialog.modal-xl {
+	width: 90%;
+}
+
+/* Tab */
+ul.nav.nav-tabs>li.closable>a {
+	padding-right: 25px;
+}
+
+ul.nav.nav-tabs>li.closable>button.times {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background: transparent;
+	color: #337ab7;
+}
+
+ul.nav.nav-tabs>li.closable.active>button.times {
+	color: #555;
+}
+
+/* Scroll Top */
+.scroll-top-wrapper {
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+	background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+
+.scroll-top-wrapper.show {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1.0;
+}
+
+/* Navigation Multiple Level */
+@media ( min-width : 767px) {
+	.navbar-nav .dropdown-menu .caret {
+		transform: rotate(-90deg);
+	}
+}
+
+/* Waiting */
+.wait {
+	color: #fff;
+	position: absolute !important;
+}
+
+.wait>.outer {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.wait>.outer>.inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* Rating */
+.rating {
+	display: inline-block;
+}
+
+.rating.disabled {
+	background-color: #ccc;
+}
+
+.rating>label {
+	padding: 0px;
+	margin-top: 0px;
+	border: none;
+	background-color: transparent;
+}
+
+.rating>label.active {
+	border: none;
+	background-color: transparent;
+}
+/* [[  END  ]] Custom Components */
+
+/* [[ START ]] Override and Add Classes */
+.modal.in .modal-dialog.modal-xm {
+	width: 100px;
+}
+/* [[  END  ]] Override and Add Classes */
+
+/* [[ START ]] Utilities */
+.ellipsis {
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.clear-both {
+	clear: both !important;
+}
+
+.margin-top-auto {
+	margin-top: auto !important;
+}
+
+.margin-top-xs {
+	margin-top: 5px !important;
+}
+
+.margin-top-sm {
+	margin-top: 10px !important;
+}
+
+.margin-top-md {
+	margin-top: 15px !important;
+}
+
+.margin-top-lg {
+	margin-top: 20px !important;
+}
+
+.margin-top-xl {
+	margin-top: 30px !important;
+}
+
+.margin-bottom-auto {
+	margin-bottom: auto !important;
+}
+
+.margin-bottom-xs {
+	margin-bottom: 5px !important;
+}
+
+.margin-bottom-sm {
+	margin-bottom: 10px !important;
+}
+
+.margin-bottom-md {
+	margin-bottom: 15px !important;
+}
+
+.margin-bottom-lg {
+	margin-bottom: 20px !important;
+}
+
+.margin-bottom-xl {
+	margin-bottom: 30px !important;
+}
+
+.padding-top-none {
+	padding-top: 0px !important;
+}
+
+.padding-top-xs {
+	padding-top: 5px !important;
+}
+
+.padding-top-sm {
+	padding-top: 10px !important;
+}
+
+.padding-top-md {
+	padding-top: 15px !important;
+}
+
+.padding-top-lg {
+	padding-top: 20px !important;
+}
+
+.padding-top-xl {
+	padding-top: 30px !important;
+}
+
+.padding-bottom-none {
+	padding-bottom: 0px !important;
+}
+
+.padding-bottom-xs {
+	padding-bottom: 5px !important;
+}
+
+.padding-bottom-sm {
+	padding-bottom: 10px !important;
+}
+
+.padding-bottom-md {
+	padding-bottom: 15px !important;
+}
+
+.padding-bottom-lg {
+	padding-bottom: 20px !important;
+}
+
+.padding-bottom-xl {
+	padding-bottom: 30px !important;
+}
+
+.vertical-align-top {
+	vertical-align: top !important;
+}
+
+.vertical-align-middle {
+	vertical-align: middle !important;
+}
+
+.vertical-align-bottom {
+	vertical-align: bottom !important;
+}
+/* [[  END  ]] Utilities */

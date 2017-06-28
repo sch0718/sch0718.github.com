@@ -1,0 +1,234 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: Copperplate Gothic Light;
+    src: url('../fonts/COPRGTL.TTF');
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.navbar-brand.logo {
+	background-image: url('../images/favicon.png');
+	background-repeat: no-repeat;
+	background-position: right 10px;
+	background-size: 15px;
+	margin: 0px 10px;
+}
+
+#globalSearchArea {
+	padding: 10px;
+}
+
+.lnbLayer {
+	text-align: left;
+}
+
+.lnbLayer .tree {
+	margin-top: 10px;
+}
+
+#contentArea {
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+#contentArea.index {
+	padding-top: 0px;
+	display: table-row;
+	background-image: url('../images/index_background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+}
+
+#contentArea.index > .container {
+	opacity: initial;
+	margin-top: 100px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #f2f2f2;
+	background-image: url('../images/logo.png');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 25px;
+	z-index: 99;
+}
+
+footer * {
+	display: none;
+}
+
+/* [[ START ]] Login Form Layer */
+#loginContainer .modal-content {
+	padding: 30px;
+	max-width: 350px;
+	width: 100% !important;
+	background-color: #F7F7F7;
+	margin: 0 auto;
+	border-radius: 2px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	font-family: roboto;
+}
+
+#loginContainer .modal-content h1 {
+	text-align: center;
+	font-size: 1.8em;
+	font-family: roboto;
+}
+
+#loginContainer .modal-content form {
+	margin-top: 30px;
+}
+
+#loginContainer .modal-content input[type=submit] {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#loginContainer .modal-content input[type=text], input[type=password] {
+	height: 44px;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 10px;
+	-webkit-appearance: none;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	padding: 0 8px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#loginContainer .modal-content input[type=text]:hover, input[type=password]:hover
+	{
+	border: 1px solid #b9b9b9;
+	border-top: 1px solid #a0a0a0;
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#loginContainer .modal-content .loginmodal {
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	height: 36px;
+	padding: 0 8px;
+}
+
+#loginContainer .modal-content .loginmodal-submit {
+	border: 0px;
+	color: #fff;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	background-color: #4d90fe;
+	padding: 17px 0px;
+	font-family: roboto;
+	font-size: 14px;
+}
+
+#loginContainer .modal-content .loginmodal-submit:hover {
+	border: 0px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	background-color: #357ae8;
+}
+
+#loginContainer .modal-content a {
+	text-decoration: none;
+	color: #666;
+	font-weight: 400;
+	text-align: center;
+	display: inline-block;
+	opacity: 0.6;
+	transition: opacity ease 0.5s;
+}
+/* [[  END  ]] Login Form Layer */
+
+/* [[ START ]] Index Page */
+.index .carousel-inner img {
+	margin: auto;
+	min-height: 150px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media ( max-width : 600px) {
+	.index .carousel-caption {
+		display: none;
+	}
+}
+
+.portletArea .glyphicon {
+	margin-right: 4px !important; /*override*/
+}
+
+.portletArea .pagination .glyphicon {
+	margin-right: 0px !important; /*override*/
+}
+
+.portletArea .pagination a {
+	color: #555;
+}
+
+.portletArea dl {
+	margin: 0px;
+	padding: 0px 2px;
+	border-bottom: 1px dotted;
+	height: 20px;
+	vertical-align: middle;
+}
+.portletArea dt {
+	width: 100%;
+	text-align: left;
+	font-weight: normal;
+	padding-right: 150px;
+}
+
+.portletArea dd {
+	position: absolute;
+	right: 0px;
+	width: 150px;
+}
+
+.portletArea dd.no-result {
+	position: relative;
+	width: 100%;
+	margin-left: 0px;
+	text-align: center;
+}
+
+#noticeModal .pre-scrollable {
+	min-height: 300px;
+}
+/* [[  END  ]] Index Page */
+
+/* [[ START ]] LNB Tree Custom */
+.tree > ul {
+	padding-right: 10px;
+}
+.tree li {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.tree li a.node.disable {
+	color: #fff;
+	background-color: #eee;
+	cursor: default;
+}
+.tree li a.node.disable:hover {
+	color: #000;
+}
+/* [[  END  ]] LNB Tree Custom */
